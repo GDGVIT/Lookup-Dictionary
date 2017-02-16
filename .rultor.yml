@@ -1,10 +1,14 @@
-install:
-  - if ! pip3 -V ; then wget -O - https://bootstrap.pypa.io/get-pip.py | python3; fi
-  - pip3 install -r requirements.txt
-
-docker:
-  as_root: true
-  image: "coala/rultor-python"
-
+deploy:
+  env:
+    MAVEN_OPTS: "-XX:MaxPermSize=256m -Xmx1g"
+  script:
+    - "sudo bundle"
+    - "mvn clean deploy -Prultor --settings ../settings.xml"
+    - "mvn clean site-deploy -Psite -Prempl --settings ../settings.xml"
 merge:
+  script: |
+    echo "testing..."
+    echo "building..."
+    echo "packaging..."
+  squash: true
   fast-forward: only
