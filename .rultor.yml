@@ -6,9 +6,4 @@ deploy:
     - "mvn clean deploy -Prultor --settings ../settings.xml"
     - "mvn clean site-deploy -Psite -Prempl --settings ../settings.xml"
 merge:
-  script: |
-    echo "testing..."
-    echo "building..."
-    echo "packaging..."
-  squash: true
   fast-forward: only
