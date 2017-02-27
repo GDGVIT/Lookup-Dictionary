@@ -4,9 +4,10 @@ A Cross Platform Dictionary Utility Application
 
 # Dependencies
 
-* xclip
+* Xlib
+* pynput
 * pyperclip
-* ptqt4
+* PyQt4
 
 # Made By:
 
