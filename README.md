@@ -3,7 +3,7 @@
 A Cross Platform Dictionary Utility Application
 
 # Dependencies
-
+[linux]
 * Xlib
 * pynput
 * pyperclip
