@@ -1,3 +1,7 @@
+'''
+Author - Ujjwal Ayyangar
+'''
+
 from ListenerClass import KeyListener
 from HandleClass import Handler
 import pyperclip
@@ -25,10 +29,7 @@ def StartCopy():
 	window=DictionBox()
 	window.show()
 	sys.exit(app.exec_())
-	
-	
-def hello():
-	print 'you beautiful thing'
+
 
 keylistener = KeyListener()
 keylistener.addKeyListener("L_CTRL+q", StartCopy)
