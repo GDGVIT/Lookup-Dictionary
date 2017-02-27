@@ -9,9 +9,7 @@ A Cross Platform Dictionary Utility Application
 * pyperclip
 * PyQt4
 
-# Made By:
+# Contributors
+<a href="https://github.com/PiyushGoyal443">Piyush Goyal</a><br />
+<a href="https://github.com/UjjwalAyyangar">Ujjwal Ayyangar</a>
 
-* Piyush Goyal
-* Ujjwal Ayyangar
-
-Feel Free to contribute !!
