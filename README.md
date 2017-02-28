@@ -8,6 +8,7 @@ A Cross Platform Dictionary Utility Application
 * pynput
 * pyperclip
 * PyQt4
+* PyDictionary
 
 # Contributors
 <a href="https://github.com/PiyushGoyal443">Piyush Goyal</a><br />
