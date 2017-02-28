@@ -8,7 +8,6 @@
 # WARNING! All changes made in this file will be lost!
 from PyDictionary import PyDictionary
 from PyQt4 import QtCore, QtGui
-
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
 except AttributeError:
@@ -25,6 +24,8 @@ except AttributeError:
 
 class Ui_Form(object):
     def setupUi(self, Form,text):
+    	
+    	Form.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(340, 150)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Preferred)
@@ -63,6 +64,14 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(_translate("Form", "Form", None))
+
+    def keyPressEvent(self, event):
+    	if event.key() == QtCore.Qt.Key_Escape: 
+        	self.close()
+		
+
+		
+
 
 
 
