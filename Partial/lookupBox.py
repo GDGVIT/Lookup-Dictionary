@@ -6,7 +6,7 @@
 #      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
-
+from PyDictionary import PyDictionary
 from PyQt4 import QtCore, QtGui
 
 try:
@@ -41,7 +41,19 @@ class Ui_Form(object):
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
         self.textEdit = QtGui.QTextEdit(self.gridLayoutWidget)
         self.textEdit.setStyleSheet(_fromUtf8("background-image: url(:/white.jpg);\n""font: 12pt \"Verdana\";"))
-	self.textEdit.setPlainText(text)
+	dictionary = PyDictionary()
+	meanings = dictionary.meaning(text)
+	out=""
+	for x in meanings:
+		out=out+"Type :- "+x
+		for y in meanings[x]:
+			out=out+"\n"+y
+
+		
+
+
+	
+	self.textEdit.setPlainText(out)
 	self.textEdit.setReadOnly(True)
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
         self.gridLayout_2.addWidget(self.textEdit, 1, 0, 1, 1)
@@ -51,6 +63,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(_translate("Form", "Form", None))
+
 
 
 import image2_rc
