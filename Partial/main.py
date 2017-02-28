@@ -1,7 +1,3 @@
-'''
-Author - Ujjwal Ayyangar
-'''
-
 from ListenerClass import KeyListener
 from HandleClass import Handler
 import pyperclip
@@ -28,10 +24,18 @@ def StartCopy():
 	app=QtGui.QApplication(sys.argv)
 	window=DictionBox()
 	window.show()
-	sys.exit(app.exec_())
-
+	app.quit()
+	app.exec_()
+	while True:
+		keylistener = KeyListener()
+		keylistener.addKeyListener("L_CTRL+q", StartCopy)
+		handle = Handler(keylistener)
+		
+	
+	
+def hello():
+	print 'you beautiful thing'
 
 keylistener = KeyListener()
 keylistener.addKeyListener("L_CTRL+q", StartCopy)
 handle = Handler(keylistener)
-
