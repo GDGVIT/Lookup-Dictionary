@@ -14,8 +14,6 @@ class DictionBox(QtGui.QWidget,Ui_Form):
 		QtGui.QWidget.__init__(self,parent)
 		text = pyperclip.paste()
 		self.setupUi(self,text)
-		
-
 
 def StartCopy():
 	import sys
@@ -34,8 +32,6 @@ def StartCopy():
 		keylistener.addKeyListener("L_CTRL+q", StartCopy)
 		handle = Handler(keylistener)
 
-
 keylistener = KeyListener()
 keylistener.addKeyListener("L_CTRL+q", StartCopy)
 handle = Handler(keylistener)
-
