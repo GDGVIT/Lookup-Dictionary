@@ -2,6 +2,8 @@
 
 A Cross Platform Dictionary Utility Application
 
+Offline support - to be added soon
+
 # Dependencies
 [linux]
 * Xlib
