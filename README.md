@@ -2,7 +2,7 @@
 
 A Cross Platform Dictionary Utility Application
 
-Usage :
+Usage :<br/>
 	Highlight the word whose meaning you want to find.<br/>
 	Press Ctrl+Q<br/>
 	A small text-box with the meaning of the word will open<br/>
