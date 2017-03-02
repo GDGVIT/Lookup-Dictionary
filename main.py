@@ -33,11 +33,7 @@ def StartCopy():
 		keylistener = KeyListener()
 		keylistener.addKeyListener("L_CTRL+q", StartCopy)
 		handle = Handler(keylistener)
-		
-	
-	
-def Obladi():
-	print 'Oblada'
+
 
 keylistener = KeyListener()
 keylistener.addKeyListener("L_CTRL+q", StartCopy)
