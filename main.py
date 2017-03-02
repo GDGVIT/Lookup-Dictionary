@@ -36,8 +36,8 @@ def StartCopy():
 		
 	
 	
-def hello():
-	print 'you beautiful thing'
+def Obladi():
+	print 'Oblada'
 
 keylistener = KeyListener()
 keylistener.addKeyListener("L_CTRL+q", StartCopy)
