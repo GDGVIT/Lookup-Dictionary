@@ -2,7 +2,8 @@
 
 A Cross Platform Dictionary Utility Application
 
-Offline support - to be added soon
+
+<a href ="https://github.com/GDGVIT/LookUp_Dictionary/blob/master/Partial/Todo.md"> Todo list<a><br/>
 
 # Dependencies
 [linux]
