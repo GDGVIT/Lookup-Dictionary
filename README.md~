@@ -2,7 +2,7 @@
 
 A Cross Platform Dictionary Utility Application
 
-#Usage :
+## Usage :
 *Highlight the word whose meaning you want to find.
 *Press Ctrl+Q
 *A small text-box with the meaning of the word will open
@@ -10,7 +10,7 @@ A Cross Platform Dictionary Utility Application
 *Repeat for other words.
 
 
-
+This project is still under development :- 
 <a href ="https://github.com/GDGVIT/LookUp_Dictionary/blob/master/Partial/Todo.md"> Todo list<a><br/>
 
 # Dependencies
