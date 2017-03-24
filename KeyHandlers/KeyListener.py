@@ -1,12 +1,11 @@
 class KeyListener(object):
     def __init__(self):
-        
-        
+
         self.pressedKeys = []
         self.listeners = {}
 
     def press(self, character):
-        
+
         self.pressedKeys.append(character)
         action = self.listeners.get(tuple(self.pressedKeys), False)
         if action:
@@ -19,10 +18,3 @@ class KeyListener(object):
     def addKeyListener(self, hotkeys, callable):
         keys = tuple(hotkeys.split("+"))
         self.listeners[keys] = callable
-
-
-
-
-
-
-

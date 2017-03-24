@@ -7,7 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 import sys
-sys.path.insert(0,'./Images')
+sys.path.insert(0, './Images')
 import image2_rc
 
 from PyDictionary import PyDictionary
@@ -20,19 +20,23 @@ except AttributeError:
 
 try:
     _encoding = QtGui.QApplication.UnicodeUTF8
+
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig, _encoding)
 except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
+
 class Ui_Form(object):
-    def setupUi(self, Form,text):
-    	
-    	Form.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+    def setupUi(self, Form, text):
+
+        Form.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(340, 150)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Preferred)
+        sizePolicy = QtGui.QSizePolicy(
+            QtGui.QSizePolicy.Fixed,
+            QtGui.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
@@ -45,21 +49,20 @@ class Ui_Form(object):
         self.gridLayout_2.setMargin(0)
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
         self.textEdit = QtGui.QTextEdit(self.gridLayoutWidget)
-        self.textEdit.setStyleSheet(_fromUtf8("background-image: url(:/white.jpg);\n""font: 12pt \"Verdana\";"))
-	dictionary = PyDictionary()
-	meanings = dictionary.meaning(text)
-	out=""
-	for x in meanings:
-		out=out+"\nType :- "+x
-		for y in meanings[x]:
-			out=out+"\n*"+y
+        self.textEdit.setStyleSheet(
+            _fromUtf8(
+                "background-image: url(:/white.jpg);\n"
+                "font: 12pt \"Verdana\";"))
+        dictionary = PyDictionary()
+        meanings = dictionary.meaning(text)
+        out = ""
+        for x in meanings:
+            out = out + "\nType :- " + x
+            for y in meanings[x]:
+                out = out + "\n*" + y
 
-		
-
-
-	
-	self.textEdit.setPlainText(out)
-	self.textEdit.setReadOnly(True)
+        self.textEdit.setPlainText(out)
+        self.textEdit.setReadOnly(True)
         self.textEdit.setObjectName(_fromUtf8("textEdit"))
         self.gridLayout_2.addWidget(self.textEdit, 1, 0, 1, 1)
 
@@ -70,12 +73,5 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form", None))
 
     def keyPressEvent(self, event):
-    	if event.key() == QtCore.Qt.Key_Escape: 
-        	self.close()
-		
-
-		
-
-
-
-
+        if event.key() == QtCore.Qt.Key_Escape:
+            self.close()
