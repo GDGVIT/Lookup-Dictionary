@@ -9,12 +9,13 @@ sys.path.insert(0, './Ui')
 from lookupBox2 import Ui_Form
 from PyQt4 import QtGui
 
-
+error=False
 class DictionBox(QtGui.QWidget, Ui_Form):
+    global error
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         text = pyperclip.paste()
-        self.setupUi(self, text)
+        self.setupUi(self, text,error)
 
 
 def StartCopy():
@@ -34,7 +35,9 @@ def StartCopy():
         keylistener.addKeyListener("L_CTRL+i", StartCopy)
         handle = Handler(keylistener)
 
-
-keylistener = KeyListener()
-keylistener.addKeyListener("L_CTRL+i", StartCopy)
-handle = Handler(keylistener)
+try:
+    keylistener = KeyListener()
+    keylistener.addKeyListener("L_CTRL+i", StartCopy)
+    handle = Handler(keylistener)
+except:
+    error=True

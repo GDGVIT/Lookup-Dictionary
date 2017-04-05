@@ -529,3 +529,5 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 555, in send_and_recv
     rs, ws, es = select.select([self.socket], writeset, [], timeout)
 KeyboardInterrupt
+Error: The Following Error occured: HTTPConnectionPool(host='wordnetweb.princeton.edu', port=80): Max retries exceeded with url: /perl/webwn?s=There (Caused by <class 'socket.gaierror'>: [Errno -2] Name or service not known)
+Error: The Following Error occured: HTTPConnectionPool(host='wordnetweb.princeton.edu', port=80): Max retries exceeded with url: /perl/webwn?s=no (Caused by <class 'socket.gaierror'>: [Errno -2] Name or service not known)

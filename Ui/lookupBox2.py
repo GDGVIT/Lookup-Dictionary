@@ -24,16 +24,22 @@ except AttributeError:
         return QtGui.QApplication.translate(context, text, disambig)
 
 class Ui_Form(object):
-    def setupUi(self, Form,text):
-        Form.setObjectName(_fromUtf8("Form"))
-        Form.resize(340, 150)
-        Form.setMinimumSize(QtCore.QSize(340, 150))
-        Form.setMaximumSize(QtCore.QSize(340, 150))
+    def ReSize(self,length,breath,Form):
+        Form.resize(length,breath)
+        Form.setMinimumSize(QtCore.QSize(length,breath))
+        Form.setMaximumSize(QtCore.QSize(length,breath))
         Form.setStyleSheet(_fromUtf8("background:transparent;"))
         self.gridWidget = QtGui.QWidget(Form)
-        self.gridWidget.setGeometry(QtCore.QRect(0, 0, 340, 150))
-        self.gridWidget.setMinimumSize(QtCore.QSize(340, 150))
-        self.gridWidget.setMaximumSize(QtCore.QSize(340, 150))
+        self.gridWidget.setGeometry(QtCore.QRect(0, 0, length, breath))
+        self.gridWidget.setMinimumSize(QtCore.QSize(length, breath))
+        self.gridWidget.setMaximumSize(QtCore.QSize(length, breath))
+        #return Form
+    def setupUi(self, Form,text,error):
+        Form.setObjectName(_fromUtf8("Form"))
+       
+        self.ReSize(340,150,Form)
+
+        
         self.gridWidget.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
         self.gridWidget.setObjectName(_fromUtf8("gridWidget"))
         self.gridLayout_2 = QtGui.QGridLayout(self.gridWidget)
@@ -45,15 +51,31 @@ class Ui_Form(object):
         self.plainTextEdit.setFont(font)
         self.plainTextEdit.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-color: rgb(255, 255, 255);"))
-        dictionary = PyDictionary()
-        meanings = dictionary.meaning(text)
-        out = ""
-        for x in meanings:
-            out = out + "\nType :- " + x
-            for y in meanings[x]:
-                out = out + "\n*" + y
+        out=""
+        if not error:
+            try :
+                dictionary = PyDictionary()
+                meanings = dictionary.meaning(text)
+                out = ""
+                for x in meanings:
+                    out = out + "\nType :- " + x
+                    for y in meanings[x]:
+                        out = out + "\n*" + y
+            except:
+                self.ReSize(250,80,Form)
+                out="""
+                Maximum tries exceeded.
+                Try again later
+                """
 
+            
+        else:
+            self.ReSize(250,80)
+            out = """
+            Word not found
+            """
         self.plainTextEdit.setPlainText(out)
+
         self.plainTextEdit.setObjectName(_fromUtf8("plainTextEdit"))
         self.gridLayout_2.addWidget(self.plainTextEdit, 0, 0, 1, 1)
 
