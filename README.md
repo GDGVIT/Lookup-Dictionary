@@ -22,5 +22,4 @@ Send a pull request and complete the Todo list if you want to contribute to this
 
 <h4> Contributors </h4> 
 <a href="https://github.com/UjjwalAyyangar">Ujjwal Ayyangar </a><br/>
-<br/>
 # Project Idea by <a href="https://github.com/PiyushGoyal443">Piyush Goyal</a><br />
