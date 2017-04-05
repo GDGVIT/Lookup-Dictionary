@@ -1,0 +1,531 @@
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 40 of the file main.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 555, in send_and_recv
+    rs, ws, es = select.select([self.socket], writeset, [], timeout)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 28, in StartCopy
+    window = DictionBox()
+  File "main.py", line 17, in __init__
+    self.setupUi(self, text)
+TypeError: setupUi() takes exactly 2 arguments (3 given)
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 40 of the file main.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+Error: The Following Error occured: list index out of range
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 28, in StartCopy
+    window = DictionBox()
+  File "main.py", line 17, in __init__
+    self.setupUi(self, text)
+  File "./Ui/lookupBox2.py", line 51, in setupUi
+    for x in meanings:
+TypeError: 'NoneType' object is not iterable
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 40 of the file main.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+Error: The Following Error occured: list index out of range
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 28, in StartCopy
+    window = DictionBox()
+  File "main.py", line 17, in __init__
+    self.setupUi(self, text)
+  File "./Ui/lookupBox2.py", line 51, in setupUi
+    for x in meanings:
+TypeError: 'NoneType' object is not iterable
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 40 of the file main.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 555, in send_and_recv
+    rs, ws, es = select.select([self.socket], writeset, [], timeout)
+KeyboardInterrupt
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 40 of the file main.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+Error: The Following Error occured: list index out of range
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 28, in StartCopy
+    window = DictionBox()
+  File "main.py", line 17, in __init__
+    self.setupUi(self, text)
+  File "./Ui/lookupBox2.py", line 51, in setupUi
+    for x in meanings:
+TypeError: 'NoneType' object is not iterable
+/usr/local/lib/python2.7/dist-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 40 of the file main.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup([your markup])
+
+to this:
+
+ BeautifulSoup([your markup], "lxml")
+
+  markup_type=markup_type))
+Traceback (most recent call last):
+  File "main.py", line 40, in <module>
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 604, in send_and_recv
+    gotreq = self.parse_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 696, in parse_response
+    gotreq = self.parse_request_response(request) or gotreq
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 784, in parse_request_response
+    req._parse_response(self.data_recv[:self.recv_packet_len])
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 224, in _parse_response
+    self._callback(r)
+  File "./KeyHandlers/HandleClass.py", line 147, in handler
+    self.listenerObject.press(character)
+  File "./KeyHandlers/KeyListener.py", line 12, in press
+    action()
+  File "main.py", line 35, in StartCopy
+    handle = Handler(keylistener)
+  File "./KeyHandlers/HandleClass.py", line 120, in __init__
+    self.disp.record_enable_context(self.context, self.handler)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 243, in enable_context
+    context = context)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/ext/record.py", line 220, in __init__
+    rq.ReplyRequest.__init__(self, *args, **keys)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1360, in __init__
+    self.reply()
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/rq.py", line 1372, in reply
+    self._display.send_and_recv(request = self._serial)
+  File "/usr/local/lib/python2.7/dist-packages/Xlib/protocol/display.py", line 555, in send_and_recv
+    rs, ws, es = select.select([self.socket], writeset, [], timeout)
+KeyboardInterrupt

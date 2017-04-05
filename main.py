@@ -6,7 +6,7 @@ import pyperclip
 import pyautogui
 from pynput.keyboard import Key, Controller
 sys.path.insert(0, './Ui')
-from lookupBox import Ui_Form
+from lookupBox2 import Ui_Form
 from PyQt4 import QtGui
 
 
@@ -31,10 +31,10 @@ def StartCopy():
     app.exec_()
     while True:
         keylistener = KeyListener()
-        keylistener.addKeyListener("L_CTRL+q", StartCopy)
+        keylistener.addKeyListener("L_CTRL+i", StartCopy)
         handle = Handler(keylistener)
 
 
 keylistener = KeyListener()
-keylistener.addKeyListener("L_CTRL+q", StartCopy)
+keylistener.addKeyListener("L_CTRL+i", StartCopy)
 handle = Handler(keylistener)
