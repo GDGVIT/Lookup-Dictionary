@@ -9,8 +9,7 @@ A Cross Platform Dictionary Utility Application
 *Press Esc to close the textbox<br/>
 *Repeat for other words.<br/>
 
-
-This project is still under development :- 
+Send a pull request and complete the Todo list if you want to contribute to this project. <br/> 
 <a href ="https://github.com/GDGVIT/LookUp_Dictionary/blob/master/Partial/Todo.md"> Todo list<a><br/>
 
 # Dependencies
@@ -21,6 +20,7 @@ This project is still under development :-
 * PyQt4
 * PyDictionary
 
-#Contributors 
+<h4> Contributors </h4> 
 <a href="https://github.com/UjjwalAyyangar">Ujjwal Ayyangar </a><br/>
+<br/>
 # Project Idea by <a href="https://github.com/PiyushGoyal443">Piyush Goyal</a><br />
