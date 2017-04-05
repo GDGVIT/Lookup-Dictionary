@@ -21,7 +21,4 @@ This project is still under development :-
 * PyQt4
 * PyDictionary
 
-# Contributor(s)
-<a href="https://github.com/UjjwalAyyangar">Ujjwal Ayyangar</a><br/>
-
 # Project Idea by <a href="https://github.com/PiyushGoyal443">Piyush Goyal</a><br />
