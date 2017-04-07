@@ -1,5 +1,4 @@
 # LookUp Dictionay
-<h5> This project has been discontinued </h5>
 A Cross Platform Dictionary Utility Application
 
 ## Usage :
