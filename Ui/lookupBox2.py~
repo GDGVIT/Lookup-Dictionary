@@ -65,6 +65,7 @@ class RoundWidget(QtGui.QWidget):
                 for y in meanings[x]:
                 	out=out+ "\n*" + y
             
+        l.setDisabled(True)
         l.setPlainText(out)    
         self.gridlayout.addWidget(l,0,0,1,1)
         self.setLayout(self.gridlayout)

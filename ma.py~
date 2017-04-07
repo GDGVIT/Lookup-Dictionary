@@ -1,0 +1,54 @@
+from PyQt4 import QtGui, QtCore
+import sys
+
+class ControlBar(QtGui.QWidget):
+    """ docstring for ControlBar"""
+    def __init__(self, parent=None):
+        super(ControlBar, self).__init__(parent)
+        self.resize(440, 100)
+        self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+        self.setWindowTitle("QLinearGradient Vertical Gradient ")
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+        self.buildUi()
+
+    def mousePressEvent(self, event):
+        self.offset = event.pos()
+
+    def mouseMoveEvent(self, event):
+        try:
+              x=event.globalX()
+              y=event.globalY()
+              x_w = self.offset.x()
+              y_w = self.offset.y()
+              self.move(x-x_w, y-y_w)
+        except: pass   
+
+    def paintEvent(self, ev):
+        painter = QtGui.QPainter(self)
+        gradient = QtGui.QLinearGradient(QtCore.QRectF(self.rect()).topLeft(),QtCore.QRectF(self.rect()).bottomLeft())
+        gradient.setColorAt(0.0, QtCore.Qt.white)
+        gradient.setColorAt(0.4, QtCore.Qt.white)
+        gradient.setColorAt(0.7, QtCore.Qt.white)
+        painter.setBrush(gradient)
+        painter.drawRoundedRect(0, 0, 440, 100, 20.0, 20.0)
+
+    def buildUi(self):
+        self.hoelayout = QtGui.QHBoxLayout()
+	self.gridWidget.setStyleSheet(_fromUtf8("background-color: rgb(255, 255, 255);"))
+        self.gridWidget.setObjectName(_fromUtf8("gridWidget"))
+        self.gridLayout_2 = QtGui.QGridLayout(self.gridWidget)
+        self.gridLayout_2.setMargin()
+        self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
+	self.plainTextEdit = QtGui.QPlainTextEdit(self.gridWidget)
+        
+        self.setLayout(self.hoelayout)
+
+
+
+
+if __name__ == '__main__':
+    app = QtGui.QApplication(sys.argv)
+    win = ControlBar()
+    win.show()
+    win.raise_()
+    sys.exit(app.exec_())

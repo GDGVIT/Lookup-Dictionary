@@ -22,6 +22,9 @@ class DictionBox(QtGui.QWidget, Ui_Form):
         self.setupUi(self, text,error)
 
 
+
+    
+
 def StartCopy():
     import sys
     keyboard = Controller()

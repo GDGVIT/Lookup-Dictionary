@@ -29,6 +29,16 @@ except AttributeError:
 
 
 class Ui_Form(object):
+
+    def paintEvent(self, ev):
+        painter = QtGui.QPainter(self)
+        gradient = QtGui.QLinearGradient(QtCore.QRectF(self.rect()).topLeft(),QtCore.QRectF(self.rect()).bottomLeft())
+        gradient.setColorAt(0.0, QtCore.Qt.black)
+        gradient.setColorAt(0.4, QtCore.Qt.gray)
+        gradient.setColorAt(0.7, QtCore.Qt.black)
+        painter.setBrush(gradient)
+        painter.drawRoundedRect(0, 0, 440, 100, 20.0, 20.0)
+
     def setupUi(self, Form, text):
 
         Form.setWindowFlags(QtCore.Qt.FramelessWindowHint)
