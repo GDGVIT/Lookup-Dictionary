@@ -44,9 +44,9 @@ class RoundWidget(QtGui.QWidget):
         painter = QtGui.QPainter(self)
 	painter.setPen(QtGui.QColor(250, 250, 250))
         gradient = QtGui.QLinearGradient(QtCore.QRectF(self.rect()).topLeft(),QtCore.QRectF(self.rect()).bottomLeft())
-        gradient.setColorAt(0.0,QColor(245,255,250))#Qt.white)
-        gradient.setColorAt(0.4,QColor(245,255,250))# QtCore.Qt.white)
-        gradient.setColorAt(0.7,QColor(245,255,250))# QtCore.Qt.white)
+        gradient.setColorAt(0.0,QColor(247, 244, 217))#Qt.white)
+        gradient.setColorAt(0.4,QColor(247, 244, 217))# QtCore.Qt.white)
+        gradient.setColorAt(0.7,QColor(247, 244, 217))# QtCore.Qt.white)
         painter.setBrush(gradient)
         painter.drawRoundedRect(0, 0, 340, 150, 15.0, 15.0)
 
@@ -80,7 +80,7 @@ class RoundWidget(QtGui.QWidget):
 
 
         for x in meanings:
-        	out=out+"\n◖ "+x.upper()+'\n'
+        	out=out+"\n| "+x.upper()+' |\n'
                 for y in meanings[x]:
                 	out=out+ "\n• " + y+'\n'
 	l.setPlainText(out)
