@@ -1,6 +1,6 @@
-# LookUp Dictionay
+# LookUp Dictionary
 A Cross Platform Dictionary Utility Application
-
+<h4> Currently the linux version is being developed </h4>
 ## Usage :
 *Highlight the word whose meaning you want to find.<br/>
 *Press LCtrl+I<br/>
