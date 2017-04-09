@@ -44,29 +44,49 @@ class RoundWidget(QtGui.QWidget):
         painter = QtGui.QPainter(self)
 	painter.setPen(QtGui.QColor(250, 250, 250))
         gradient = QtGui.QLinearGradient(QtCore.QRectF(self.rect()).topLeft(),QtCore.QRectF(self.rect()).bottomLeft())
-        gradient.setColorAt(0.0, QtCore.Qt.white)
-        gradient.setColorAt(0.4, QtCore.Qt.white)
-        gradient.setColorAt(0.7, QtCore.Qt.white)
+        gradient.setColorAt(0.0,QtCore.Qt.white)
+        gradient.setColorAt(0.4,QColor(235,235,240))# QtCore.Qt.white)
+        gradient.setColorAt(0.7,QColor(235,235,240))# QtCore.Qt.white)
         painter.setBrush(gradient)
         painter.drawRoundedRect(0, 0, 340, 150, 15.0, 15.0)
 
     def buildUi(self):
+    	global word
         self.gridlayout = QtGui.QGridLayout()
+	title=QLabel()
+	titleFont = QtGui.QFont("Ubuntu", 12, QtGui.QFont.Bold)
+	title.setFont(titleFont)
+	title.setText(word.title())
+	title.setAlignment(QtCore.Qt.AlignHCenter)
+	self.gridlayout.addWidget(title)#,0,0,1,1)
+
+
         l=QtGui.QPlainTextEdit()
         font=QtGui.QFont()
         font.setFamily(_fromUtf8("Ubuntu"))
-	print 23490
         dictionary=PyDictionary()
-	global word
+	
         meanings=dictionary.meaning(word)
+        Nouns=[]
+        Verbs=[]
+        for types in meanings:
+            if types == "Noun":
+                Nouns=meanings[u'Noun']
+            elif types == "Verb":
+                Verbs = meanings[u'Verb']
+        
+
         out=""
+
+
         for x in meanings:
-        	out=out+"\nType :- "+ x
+        	out=out+"\n◖ "+x.upper()+'\n'
                 for y in meanings[x]:
-                	out=out+ "\n*" + y
+                	out=out+ "\n• " + y+'\n'
+	l.setPlainText(out)
             
-        l.setPlainText(out)    
-        self.gridlayout.addWidget(l,0,0,1,1)
+        #l.setPlainText(out)    
+        self.gridlayout.addWidget(l)#,0,0,1,1)
         self.setLayout(self.gridlayout)
 
 class Ui_Form(object):
