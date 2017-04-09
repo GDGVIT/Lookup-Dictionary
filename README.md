@@ -1,12 +1,17 @@
 # LookUp Dictionary
-A Cross Platform Dictionary Utility Application
-<h4> Currently the linux version is being developed </h4>
-## Usage :
+A Cross Platform Dictionary Utility Application<br/>
+ Currently the linux version is being developed 
+<h1> Usage : </h1> <br/>
+
 *Highlight the word whose meaning you want to find.<br/>
-*Press LCtrl+I<br/>
+*Press LCtrl+m<br/>
 *A small text-box with the meaning of the word will open<br/>
 *Press Esc to close the textbox<br/>
 *Repeat for other words.<br/>
+
+# Demo :
+
+![Alt text](https://github.com/GDGVIT/LookUp_Dictionary/blob/master/DemoScreenshot.gif)
 
 Send a pull request and complete the Todo list if you want to contribute to this project. <br/> 
 <a href ="https://github.com/GDGVIT/LookUp_Dictionary/blob/master/Partial/Todo.md"> Todo list<a><br/>
