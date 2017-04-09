@@ -36,12 +36,12 @@ def StartCopy():
     app.exec_()
     while True:
         keylistener = KeyListener()
-        keylistener.addKeyListener("L_CTRL+i", StartCopy)
+        keylistener.addKeyListener("L_CTRL+m", StartCopy)
         handle = Handler(keylistener)
 
 try:
     keylistener = KeyListener()
-    keylistener.addKeyListener("L_CTRL+i", StartCopy)
+    keylistener.addKeyListener("L_CTRL+m", StartCopy)
     handle = Handler(keylistener)
 except:
     error=True
