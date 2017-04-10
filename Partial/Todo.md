@@ -2,7 +2,7 @@
 
 - [x] ~~Make the keyboard accept multiple hotkey events - Ujjwal~~<br/>
 - [x] ~~Resize Isssues - Ujjwal~~ <br/>
-
+- [x] ~~Textbox Coordinates - Ujjwal~~ <br/>
 - [x] ~~Online dictionary integration  Ujjwal~~<br/>
 - [x] ~~Try to make the borders transparent~~<br/>
 - [x] ~~Fixed the title problem in Ui~~ <br/>
