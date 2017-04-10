@@ -3,11 +3,11 @@ A Cross Platform Dictionary Utility Application<br/>
  Currently the linux version is being developed 
 <h1> Usage : </h1> <br/>
 
-*Highlight the word whose meaning you want to find.<br/>
-*Press LCtrl+m<br/>
-*A small text-box with the meaning of the word will open<br/>
-*Press Esc to close the textbox<br/>
-*Repeat for other words.<br/>
+* Highlight the word whose meaning you want to find.<br/>
+* Press LCtrl+m<br/>
+* A small text-box with the meaning of the word will open<br/>
+* Press Esc to close the textbox<br/>
+* Repeat for other words.<br/>
 
 # Demo :
 
