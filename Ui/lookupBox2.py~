@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'lookupBox2.ui'
-#
-# Created: Thu Mar 30 21:02:21 2017
-#      by: PyQt4 UI code generator 4.10.4
-#
-# WARNING! All changes made in this file will be lost!
 from PyDictionary import PyDictionary
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import * 
@@ -44,9 +37,9 @@ class RoundWidget(QtGui.QWidget):
         painter = QtGui.QPainter(self)
 	painter.setPen(QtGui.QColor(250, 250, 250))
         gradient = QtGui.QLinearGradient(QtCore.QRectF(self.rect()).topLeft(),QtCore.QRectF(self.rect()).bottomLeft())
-        gradient.setColorAt(0.0,QColor(242, 237, 193))#Qt.white)
-        gradient.setColorAt(0.4,QColor(242, 237, 193))# QtCore.Qt.white)
-        gradient.setColorAt(0.7,QColor(242, 237, 193))# QtCore.Qt.white)
+        gradient.setColorAt(0.0,QColor(247, 244, 217))#Qt.white)
+        gradient.setColorAt(0.4,QColor(247, 244, 217))# QtCore.Qt.white)
+        gradient.setColorAt(0.7,QColor(247, 244, 217))# QtCore.Qt.white)
         painter.setBrush(gradient)
         painter.drawRoundedRect(0, 0, 340, 150, 15.0, 15.0)
 

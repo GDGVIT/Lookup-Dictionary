@@ -36,7 +36,7 @@ def StartCopy():
     if x - 130 >=0:
     	x=x-139
 
-    y=y+20
+    y=y+60
 
     window.move(x,y)
     window.show()

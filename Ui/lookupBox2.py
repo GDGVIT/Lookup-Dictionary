@@ -117,5 +117,3 @@ class Ui_Form(object):
     def keyPressEvent(self, event):
         if event.key() == QtCore.Qt.Key_Escape:
             self.close()
-
-
