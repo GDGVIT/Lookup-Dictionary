@@ -44,9 +44,9 @@ class RoundWidget(QtGui.QWidget):
         painter = QtGui.QPainter(self)
 	painter.setPen(QtGui.QColor(250, 250, 250))
         gradient = QtGui.QLinearGradient(QtCore.QRectF(self.rect()).topLeft(),QtCore.QRectF(self.rect()).bottomLeft())
-        gradient.setColorAt(0.0,QColor(247, 244, 217))#Qt.white)
-        gradient.setColorAt(0.4,QColor(247, 244, 217))# QtCore.Qt.white)
-        gradient.setColorAt(0.7,QColor(247, 244, 217))# QtCore.Qt.white)
+        gradient.setColorAt(0.0,QColor(250, 240, 240))#Qt.white)
+        gradient.setColorAt(0.4,QColor(250, 240, 240))# QtCore.Qt.white)
+        gradient.setColorAt(0.7,QColor(250, 240, 240))# QtCore.Qt.white)
         painter.setBrush(gradient)
         painter.drawRoundedRect(0, 0, 340, 150, 15.0, 15.0)
 
@@ -54,16 +54,16 @@ class RoundWidget(QtGui.QWidget):
     	global word
         self.gridlayout = QtGui.QGridLayout()
 	title=QLabel()
-	titleFont = QtGui.QFont("Ubuntu", 12, QtGui.QFont.Bold)
+	titleFont = QtGui.QFont("Verdana", 12, QtGui.QFont.Bold)
 	title.setFont(titleFont)
 	title.setText(word.title())
 	title.setAlignment(QtCore.Qt.AlignHCenter)
 	self.gridlayout.addWidget(title)#,0,0,1,1)
 
 
-        l=QtGui.QPlainTextEdit()
-        font=QtGui.QFont()
-        font.setFamily(_fromUtf8("Ubuntu"))
+        l=QtGui.QTextEdit()
+        #font=QtGui.QFont()
+        #font.setFamily(_fromUtf8("Baskerville Old Face"))
         dictionary=PyDictionary()
 	
         meanings=dictionary.meaning(word)
@@ -80,10 +80,13 @@ class RoundWidget(QtGui.QWidget):
 
 
         for x in meanings:
-        	out=out+"\n| "+x.upper()+' |\n'
+        	out=out+'<b><font face="Comic sans MS" color="red">'+x.upper()+'</font></b><br/>'
                 for y in meanings[x]:
-                	out=out+ "\n• " + y+'\n'
-	l.setPlainText(out)
+                	out=out+ '<br/><font face="Comic sans MS">• ' + y+'</font><br/>'
+	l.setHtml(out)
+        #l.setHtml("<h3> HEY </h3>")
+	#a = QtCore.QString('<b>HEY</b>')
+	#l.insertHtml(a)
             
         #l.setPlainText(out)    
         self.gridlayout.addWidget(l)#,0,0,1,1)
