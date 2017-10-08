@@ -71,9 +71,9 @@ class RoundWidget(QtGui.QWidget):
         Verbs=[]
         for types in meanings:
             if types == "Noun":
-                Nouns=meanings[u'Noun']
+                Nouns=meanings['Noun']
             elif types == "Verb":
-                Verbs = meanings[u'Verb']
+                Verbs = meanings['Verb']
         
 
         out=""
