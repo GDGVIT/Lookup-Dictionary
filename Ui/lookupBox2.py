@@ -7,6 +7,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 from PyDictionary import PyDictionary
+from dictionary import definition
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import * 
 from PyQt4.QtCore import * 
@@ -64,26 +65,38 @@ class RoundWidget(QtGui.QWidget):
         l=QtGui.QTextEdit()
         #font=QtGui.QFont()
         #font.setFamily(_fromUtf8("Baskerville Old Face"))
-        dictionary=PyDictionary()
+        # dictionary=PyDictionary()
 	
-        meanings=dictionary.meaning(word)
-        Nouns=[]
-        Verbs=[]
-        for types in meanings:
-            if types == "Noun":
-                Nouns=meanings[u'Noun']
-            elif types == "Verb":
-                Verbs = meanings[u'Verb']
+        # meanings=dictionary.meaning(word)
+        # Nouns=[]
+        # Verbs=[]
+        # for types in meanings:
+        #     if types == "Noun":
+        #         Nouns=meanings[u'Noun']
+        #     elif types == "Verb":
+        #         Verbs = meanings[u'Verb']
+
+        out = ""
+
+
+        # for x in meanings:
+        # 	out=out+'<b><font face="Comic sans MS" color="red">'+x.upper()+'</font></b><br/>'
+        #         for y in meanings[x]:
+        #         	out=out+ '<br/><font face="Comic sans MS">• ' + y+'</font><br/>'
         
+        meanings = definition(word)  # offline dict
 
-        out=""
+        if len(meanings) > 0:
+            for x in meanings:
+                x = '<b>' + x[:1] + '</b>' + x[1:]
+                out += x + '<br>'
+        else:
+            out = 'word not found'
 
+        out = '<font face="Comic sans MS">' + out + '</font>'
 
-        for x in meanings:
-        	out=out+'<b><font face="Comic sans MS" color="red">'+x.upper()+'</font></b><br/>'
-                for y in meanings[x]:
-                	out=out+ '<br/><font face="Comic sans MS">• ' + y+'</font><br/>'
 	l.setHtml(out)
+        l.setReadOnly(True)
         #l.setHtml("<h3> HEY </h3>")
 	#a = QtCore.QString('<b>HEY</b>')
 	#l.insertHtml(a)

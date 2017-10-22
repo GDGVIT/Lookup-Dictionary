@@ -22,3 +22,4 @@ def definition(word):
             defns.append(info)
 
     return defns
+    # return '\n'.join(defns)
